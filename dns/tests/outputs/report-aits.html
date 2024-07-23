@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            color: #d8d812;
+            padding: 20px;
+            --max-width: 1200px;
+            --line-height: 1.5;
+            --margin: 0 auto;
+        }
+        header, footer {
+            background-color: darkgray;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        img {
+            max-height: 700px;
+        }
+        h1, h2 {
+            color: teal;
+        }
+        .container {
+            color: black;
+            margin: 20px;
+            align-content: left;
+            --justify-content: space-between;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: left;
+            --justify-content: space-between;
+            width: 100%;
+            text-align: left;
+            gap: 20px;
+        }
+        .cells {
+            align-content: left;
+            --justify-content: space-between;
+            flex-basis: calc(50% - 10px);
+            max-width: calc(50% - 10px);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Application Capabilities</h1>
+        </header>
+        <div class="flex">
+            
+                <div class="cells">
+                    <h2></h2>
+                    
+                </div>
+            
+        </div>
+        <footer>
+            <p>Team FMTA</p>
+        </footer>
+    </div>
+</body>
+</html>

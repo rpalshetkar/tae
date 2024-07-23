@@ -1,0 +1,71 @@
+title: "Body of Work"
+header: "Body of Work"
+footer: "Team FMTA"
+
+pivots:
+  Effort:
+    index: ["Lead"]
+    columns: ["Group"]
+    values: ["Effort"]
+    aggfunc: "sum"
+
+  Errors:
+    index: ["Lead"]
+    columns: ["Group"]
+    values: ["Errors"]
+    aggfunc: "sum"
+
+charts:
+  Errors:
+    type: "bar"
+    x: "Lead"
+    y: "Errors"
+    z: "Car"
+
+  Effort:
+    type: "bar"
+    x: "Lead"
+    y: "Effort"
+    z: "Car"
+
+  Errors Heatmap:
+    type: "heatmap"
+    x: "Lead"
+    y: "Errors"
+    z: "Assignee"
+
+  Timeline:
+    type: "gantt"
+    x: "Headline"
+    y: "Start Date"
+    z: "End Date"
+    show: "Effort"
+
+  Performance:
+    type: "histogram"
+    x: "Date"
+    y: "Value"
+    z: "Lead"
+
+
+tables:
+  Milestones:
+    columns: ["Car", "Headline", "Lead", "Assignee", "Errors", "Effort"]
+    rows: 15
+
+layout_no:
+  - { type: "chart", name: "Performance" }
+
+layout_old:
+  - { type: "chart", name: "Errors Heatmap" }
+  - { type: "chart", name: "Effort" }
+  - { type: "chart", name: "Errors" }
+  - { type: "pivot", name: "Errors" }
+  - { type: "pivot", name: "Effort" }
+  - { type: "table", name: "Milestones" }
+  - { type: "chart", name: "Timeline" }
+
+layout:
+  - Errors(Cars/Trains): 
+      - spec: Car/Train/Errors
+      - show: data, heatmap

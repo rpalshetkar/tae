@@ -1,0 +1,16 @@
+title: "Application Capabilities"
+header: "Application Capabilities"
+footer: "Team FMTA"
+
+data:
+    - Capabilities:
+        ds: "xAITs"
+
+layout:
+    - Milestones:
+        ds: "Capabilities"
+        show:
+            - table:
+                x: ["Country"]
+                y: "Score"
+                z: "Asset Class"
