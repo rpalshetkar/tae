@@ -30,6 +30,8 @@ class TestDS(unittest.TestCase):
         cls.errors = cls.bow.children["reviews"]
         caps = fake_ait_df()
         cls.caps = DS(caps)
+        cls.dir = "tests/outdir"
+        cls.tdir = "templates"
 
     def test_init_ds_create(self):
         ds = self.dsbow
@@ -48,15 +50,15 @@ class TestDS(unittest.TestCase):
         assert wf
 
     def test_bow_rep(self):
-        view = View("templates/specbow.yaml", self.bow)
-        html = view.render("templates/template.html")
-        with open("report-bow.html", "w") as f:
+        view = View(f"{self.tdir}/specbow.yaml", self.bow)
+        html = view.render(f"{self.tdir}/template.html")
+        with open(f"{self.dir}/report-bow.html", "w") as f:
             f.write(html)
 
     def test_aits_rep(self):
-        view = View("templates/specaits.yaml", self.caps)
-        html = view.render("templates/template.html")
-        with open("report-aits.html", "w") as f:
+        view = View(f"{self.tdir}/specaits.yaml", self.caps)
+        html = view.render(f"{self.tdir}/template.html")
+        with open(f"{self.dir}/report-aits.html", "w") as f:
             f.write(html)
 
 
