@@ -1,0 +1,13 @@
+title: "Application Capabilities"
+header: "Application Capabilities"
+footer: "Team FMTA"
+
+layout:
+    - { type: "chart", name: "Country Asset Class" }
+
+charts:
+    Country Asset Class:
+        type: "heatmap"
+        x: "Country"
+        y: "Score"
+        z: "Asset Class"
