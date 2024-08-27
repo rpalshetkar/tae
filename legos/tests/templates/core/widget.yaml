@@ -1,0 +1,32 @@
+id: type:str
+ds:
+    type: DS
+    info: Dataset Reference
+view:
+    type: str
+    info: Chart/Table/Pivot
+    enum: [bar, line, box, heatmap, timeline, sankey, table, pivot]
+x:
+    type: list
+    info: List of Columns (x-axis) or Table/Pivot Columns
+xt:
+    type: str
+    info: Title on xAxis in case of Chart
+x1:
+    type: list
+    info: Chart Category or Facet/Pivot Category Columns
+w:
+    type: int
+    info: Width of the chart/table/pivot
+y:
+    type: list
+    info: List of Columns (x-axis) or Table/Pivot Columns
+yt:
+    type: str
+    info: Title on yAxis in case of Chart
+y1:
+    type: list
+    info: Chart Category or Facet/Pivot Category Rows
+v:
+    type: list
+    info: Values in Chart/Pivot/Tables

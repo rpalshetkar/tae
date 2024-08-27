@@ -1,0 +1,96 @@
+base:
+    format: str
+    required: bool
+    hidden: bool
+    placeholder: str
+
+int:
+    widget: number
+    max: int
+    min: int
+    step: int
+
+float:
+    widget: number
+    min: float
+    max: float
+    step: float
+    precision: int
+
+datetime:
+    widget: datetime-picker
+    min: datetime
+    max: datetime
+
+date:
+    widget: date-picker
+    min: date
+    max: date
+
+text:
+    widget: text-input
+    min: int
+    max: int
+    pattern: str
+
+note:
+    widget: textarea
+    min: int
+    max: int
+    rows: int
+
+list:
+    widget: tags-input
+    min: int
+    max: int
+
+multiselect:
+    widget: multiselect
+    options: list
+    min: int
+    max: int
+
+select:
+    widget: dropdown
+    options: list
+
+switch:
+    widget: toggle-switch
+    on_label: str
+    off_label: str
+
+boolean:
+    widget: checkbox
+    label: str
+
+email:
+    widget: email-input
+
+url:
+    widget: url-input
+
+password:
+    widget: password-input
+    min: int
+    max: int
+    strength: bool
+
+file:
+    widget: file-upload
+    accept: str
+    multiple: bool
+    max: int
+
+color:
+    widget: color-picker
+    format: str
+
+range:
+    widget: slider
+    min: float
+    max: float
+    step: float
+
+rating:
+    widget: star-rating
+    max: int

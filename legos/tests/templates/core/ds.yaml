@@ -1,0 +1,17 @@
+id: str
+ds:
+    type: str
+    info: Data Source Alias
+protocol:
+    type: str
+    enum: [http, https, file, numbers, xls, csv, json, qzt, txf, composite]
+uri:
+    type: str
+
+composite:
+    datasets: type: list
+    keys: list[list]
+    how: list[str]
+
+humanize: type: bool
+q: Query

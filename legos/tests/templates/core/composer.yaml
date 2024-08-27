@@ -1,0 +1,15 @@
+id: type: str
+datasets: type: list[DS]
+queries: type: list[Query]
+mutations: type: list[Mutation]
+view:
+  widgets: type: list[Widgets]
+  rows: type: list
+    title: type: str
+    cols: type: list
+      title: type: str
+      widget: type: Widget
+feed:
+  header: list[str]
+  delimiter: str
+  protocol: str

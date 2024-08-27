@@ -1,0 +1,79 @@
+x:
+    type: list
+    supported: [timeline, bar, line, box, heatmap]
+
+y:
+    type: list
+    supported: [bar, line, box, heatmap]
+
+z:
+    type: list
+    supported: [heatmap]
+
+color:
+    type: str, list
+    supported: [sankey, bar, line, box, heatmap]
+
+values:
+    type: list
+    supported: [sankey, pie]
+
+labels:
+    type: dict
+    supported: [sankey]
+
+text:
+    type: str, list
+    supported: [bar, line, box, heatmap]
+
+hover_arg:
+    type: str, list
+    supported: [bar, line, box, heatmap]
+
+hover_data:
+    type: list, dict
+    supported: [bar, line, box, heatmap]
+
+custom_data:
+    type: list
+    supported: [bar, line, box, heatmap]
+
+error_x:
+    type: dict
+    supported: [bar, line]
+
+error_y:
+    type: dict
+    supported: [bar, line]
+
+animation_frame:
+    type: str, list
+    supported: [bar, line]
+
+animation_group:
+    type: str, list
+    supported: [bar, line]
+
+facet_row:
+    type: str, list
+    supported: [bar, line]
+
+facet_col:
+    type: str, list
+    supported: [bar, line]
+
+title:
+    type: str
+    supported: [timeline, sankey, bar, line, heatmap, box]
+
+template:
+    type: str
+    supported: [timeline, sankey, bar, line, heatmap, box]
+
+width:
+    type: int
+    supported: [timeline, sankey, bar, line, heatmap, box]
+
+height:
+    type: int
+    supported: [timeline, sankey, bar, line, heatmap, box]

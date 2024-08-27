@@ -1,0 +1,48 @@
+header: "Monthly Sales Report"
+footer: "Generated on {% now 'local' %}"
+
+pivots:
+  Monthly sales:
+    values: "sales"
+    index: ["region", "date"]
+    columns: "product"
+    aggfunc: "sum"
+  Product sales:
+    values: "sales"
+    index: "product"
+    columns: "category"
+    aggfunc: "sum"
+  Regional sales:
+    values: "sales"
+    index: "region"
+    columns: "product"
+    aggfunc: "sum"
+
+charts:
+  Sales trend:
+    type: "lineplot"
+    x: "date"
+    y: "sales"
+  Category comparison:
+    type: "barplot"
+    x: "category"
+    y: "sales"
+
+tables:
+  Top products:
+    columns: ["product", "sales"]
+    rows: 5
+
+layout:
+  - [
+      { type: "pivot", name: "Monthly sales" },
+      { type: "chart", name: "Sales trend" },
+    ]
+  - [
+      { type: "pivot", name: "Product sales" },
+      { type: "chart", name: "Category comparison" },
+    ]
+  - [
+      { type: "table", name: "Top Products" },
+      { type: "pivot", name: "Regional sales" },
+    ]

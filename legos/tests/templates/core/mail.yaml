@@ -1,0 +1,13 @@
+id: type: str
+from: type: str
+to: type: list
+subject: type: str
+severity: type: str
+module: type: str
+team: type: str
+audit: type: bool
+errors: type: int
+header: type: str 
+body: type: str 
+footer: type: str 
+attachments: type: str 
