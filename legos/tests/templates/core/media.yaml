@@ -1,0 +1,16 @@
+class: media
+mime:
+albums:
+paths:
+  file:
+  google:
+  apple:
+  rsync:
+  sharepoint:
+  wiki:
+tags:
+flags:
+syncs:
+  google:
+  apple:
+  rsync:

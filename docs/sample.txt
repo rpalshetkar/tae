@@ -1,0 +1,36 @@
+Business Outcome
+Efficient utilisation of bond inventory on the books and maximize balance sheet usage
+Enable trading of long dated repos and minimize cost of funding across all Asia markets
+Asia local markets treasury would also benefit and could contribute to the platform evolution
+APEX Asia build will follow global product and platform strategy
+Cost Saves: $ X
+Revenue Opportunities: $ Y
+Technology Outcome
+Long term Repo trading is enabled via APEX/BTM/EBAR infrastructure in phased manner
+Bloomberg Repo booking would continue with APEX FTB infra and Bloomberg usage would be phased out
+Asia specific NFRR/FR integration required with introduction of APEX as new platform in new entities
+Local technology and external Regulatory approval routines need to be factored in the planning process
+APEX Risk infrastructure would be owned by MACRO Risk Team
+Technology Outcomes Not in Scope
+Exceptions: Indonesia Repo trading continues to be managed via Indonesia Bank in a Box given on-shoring requirements
+Exception: APEX for Branches which don't have BTM/EBAR and have GBS NIS dependencies. No effort would be undertaken to link APEX to legacy black-office platforms like GBS
+Repo E-trading capabilities - Lift to the existing GFF offering need to be considered and should be addressed as part of P2/GRET/RAPTOR infrastructure
+Actions
+Investment Proposals and Product Roadmap
+Products/Pally - Repo Platform investment proposal phases
+Products/Trading - POC Identifications across entities
+Entities/Desks/Countries in Scope
+Singapore POC (Has right back-office aligned)
+Malaysia POC (Covers BTM/EBAR front to back simplification initiative)
+Internal MLI/BANA vs Branches Repos
+Resourcing Plan
+Pally - Identify opportunities to self fund within FMTA; redeploy from functional areas where platform maturity on BAU/INIT has been achieved. Small carve out from LCT BE basket could be utilized to drive pilot POC entity transition
+Rob/Prabhat/Pally - FMTA augmentation with GBS resources to build support team from Asia (New Grads or experienced team within GBS)
+Products/Rob/Murugan/Pally - Ops simplification/SOR Simplification/BE sleeves to be pursued to have BTM/EBAR deployed across the region
+Rob/Issac/Pally/Prabhat - Training plan for identified resources
+Technology Design
+Technology Deliverables and Estimates
+PI Team	Deliverable	Effort T-Shirt Size	Weeks
+DMO	Analysis - Foundations and POC	L	20
+SOOR	POC FTB Execution	XL	40
+SOOR	Asia Branches (6)	XL	100
